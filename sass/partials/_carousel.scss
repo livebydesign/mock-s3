@@ -1,0 +1,82 @@
+//
+// Carousel
+// --------------------------------------------------
+// Slide Fader
+.carousel-fade {
+    > .carousel-inner {
+        > .item {
+          opacity: 0.9;
+          -webkit-transition-property: opacity;
+          -moz-transition-property: opacity;
+          -o-transition-property: opacity;
+          transition-property: opacity;
+        }
+        &.next.left,
+        &.prev.right, 
+        &.active {
+          opacity: 1;
+        }
+        &.prev,
+        &.active.left,
+        &.next,
+        &.active.right {
+        opacity: 0;
+        z-index: 1;
+      }
+      
+    > .carousel-control {
+      z-index: 2;
+    }
+  }
+}
+// Take away background colors, borders and center the arrows 
+.carousel {
+    > .carousel-control {
+      background: none;
+      border: none;
+      top: 50%;
+      color: $sketchup-ltgray;
+  }
+}
+.carousel-control {
+    
+}
+
+@media (max-width: 767px) {
+    .block {
+        margin-left: -20px;
+        margin-right: -20px;
+    }
+}
+.carousel-indicators {
+    
+}
+
+// I wanted  a different version that what I have for the Nav Paddles
+a.carousel-control.right,
+a.carousel-control.left {
+  font-size:35px;
+}
+
+.carousel-indicators {
+      .active {
+        width: 16px;
+        height: 16px;
+        margin: 1px;
+      }
+      > li {
+      width: 16px;
+      height: 16px;
+      background-color: $sketchup-medgray \6;
+      border: 3px solid $sketchup-medgray;
+    }
+    > .active {
+    background-color: $sketchup-medgray;
+    }
+    
+  }
+
+
+
+
+

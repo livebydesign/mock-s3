@@ -1,0 +1,593 @@
+
+.heroimages-01{
+	    @include background ('../images/nasa-banner.jpg');
+	    -webkit-background-size: cover;
+	    -moz-background-size: cover;
+	    background-size: cover;
+	    -o-background-size: cover;
+}
+.product-logo {
+	width: 50%;
+}
+
+
+
+
+.allcaps {
+		text-transform: uppercase;
+		letter-spacing: 0.03em;
+		line-height: 1.3em;
+	}
+
+.jeremy {
+	&.image-one{
+	    @include background ('../images/SU-Landing/new-in-2016-hero-01.jpg');
+	    background-repeat: no-repeat;
+		background-attachment: relative;
+		background-position: bottom;
+		background-color: $sketchup-medgray;
+	}
+}
+
+// Help Center //
+.link-list {
+	p, .p {
+		padding-top: 15px;
+	}
+}
+.search-bar {
+	.btn {
+	font-size: $font-size-base;
+	}
+}
+.search-result {
+	h3{
+		a{
+			color: $sketchup-gray;
+		}
+		a:hover {
+			color: ($sketchup-red * .10);
+			text-decoration: underline;
+		}
+	}
+	p {
+		a {
+			font-weight: 800;
+		}
+		a::after {
+			content: ',';
+			color: $sketchup-gray;
+		}
+	}
+}
+
+// End Help Center //
+
+.hero-slider {
+	// SLIDES //
+	#casestudy01.jumbotron{
+    @include background ('../images/3D/3Dfor-arch-hero-01.jpg');
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+    background-position: bottom center;
+	}
+	#casestudy02.jumbotron{
+	    @include background ('../images/3D/3Dfor-arch-hero-02.jpg');
+	    -webkit-background-size: cover;
+	    -moz-background-size: cover;
+	    background-size: cover;
+	    -o-background-size: cover;
+	}
+	#casestudy03.jumbotron{
+	    @include background ('../images/3D/3Dfor-arch-hero-04.jpg');
+	    -webkit-background-size: cover;
+	    -moz-background-size: cover;
+	    background-size: cover;
+	    -o-background-size: cover;
+	}
+	#casestudy04.jumbotron{
+	    @include background ('../images/3D/3Dfor-arch-hero-03.jpg');
+	    -webkit-background-size: cover;
+	    -moz-background-size: cover;
+	    background-size: cover;
+	    -o-background-size: cover;
+	}
+	// END SLIDES //
+}
+.heroimages {
+	.heroimage05.jumbotron{
+	    @include background ('../images/SU-product/hero-image-E01.jpg');
+	    -webkit-background-size: cover;
+	    -moz-background-size: cover;
+	    background-size: cover;
+	    -o-background-size: cover;
+	}
+}
+
+.heroimages-02{
+    @include background ('../images/Homepage/homepage-image-02.jpg');
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+.heroimages-03{
+    @include background ('../images/sumv/sumv-image-04.jpg');
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+.heroimages-04{
+    @include background ('../images/sumv/sumv-image-03.jpg');
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+.heroimages-05{
+    @include background ('../images/SU-Landing/new-in-2016-hero-01.jpg');
+   background-size: cover;
+   background-position: bottom;
+
+}
+.heroimages-06{
+    @include background ('../images/Reseller/reseller-hero-01.jpg');
+   background-size: cover;
+   background-position: bottom;
+
+}
+.heroimages-07{
+    @include background ('../images/Download/download-hero-01.jpg');
+   background-size: cover;
+  -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+
+}
+.heroimages-08{
+    @include background ('../images/Download/download-hero-02.jpg');
+   background-size: cover;
+  -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+
+}
+.heroimages-09{
+    @include background ('../images/Download/download-hero-03.jpg');
+   background-size: cover;
+  -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+.scalefig-01{
+    @include background ('../images/help_center/scale-fig-01.png');
+    background-position: left;
+
+  
+}
+
+
+// --- //
+
+// LOGO SECTION AND BOTTOM BUY BUTTON //
+
+#buy-sketchup-pro,
+#clientlogos {
+	h1 {
+		padding-bottom: 0px !important;
+	}
+	h4 {
+		margin-top: 0px;
+		padding-bottom: 20px;
+	}
+}
+
+// END //
+
+// --- //
+
+// TESTIMONIAL SECTION //
+
+#testimonial {
+	& h1 {
+	padding-bottom: 50px !important;
+	}
+	.testimonial {
+	padding-bottom: 80px;
+	}
+}
+// END //
+
+// --- //
+
+// FEATURED CONTENT SLIDER //
+.featured-content-slider {
+	.slide-lowerpanel {
+		.row:first-child {
+		padding-top: 20px;
+		padding-bottom: 80px; 
+		}
+	}
+	.img-left {
+		margin-right: 15px;
+		}
+	.content-right-img {
+			&-xs {
+			padding-left: 70px;
+			}
+			&-sm {
+			padding-left: 140px;
+			}
+			&-md {
+			padding-left: 185px;
+			}
+			&-lg {
+			padding-left: 205px;
+			}
+		}
+	p {
+		&.subhead-text {
+			font-size: ($base-font-size * 2.0);
+			font-weight: $regular;
+		}
+		}
+	.workflow-list {
+		padding-top:20px;
+		h5, p {
+		padding-left: 45px;
+		margin-bottom:0px;
+		padding-bottom:5px;
+		}
+		p {
+		font-size: $font-size-base;
+		}
+		h5 {
+		font-size:16px;
+		}
+		li {
+		list-style:none;
+		padding-bottom:15px; 
+		}
+	}
+	.workflow-img {
+		padding-bottom:50px;
+		img {
+			height:600px; 
+		}
+	}
+	.features-list {
+	padding-bottom: 15px; 
+	p {
+	font-size: $font-size-base; 
+	}
+}
+
+}
+// END //
+
+// --- //
+
+
+#myCarousel03 {
+	#workflow01 .img-underline {
+	margin-bottom:19px;
+	}
+	.row{
+	padding-bottom:80px; 
+	}
+}
+
+
+// END //
+
+
+// Landing Page //
+#sketchup-pro-landing {
+	.accordion {
+		&.bkg-product-A1 {
+		z-index: -1;
+		background-image: url(../images/SU-Landing/new-in-2016-image-02.jpg);
+		background-repeat: no-repeat;
+		background-attachment: relative;
+		background-position: center;
+		background-color: $sketchup-ltgray;
+		
+		}
+		&.bkg-product-A2 {
+		z-index: -1;
+		background-image: url(../images/SU-Landing/new-in-2016-image-03.jpg);
+		background-repeat: no-repeat;
+		background-attachment: relative;
+		background-position: center;
+		background-color: $sketchup-medgray;
+		}
+	}
+	
+	/* ACCORDION */y
+	.white-text {
+	color: #ffffff;
+}
+.panel-default {
+	border: 0;
+	border-radius: 3px;
+	
+	display: block;
+	text-align: left;
+
+}
+
+.panel-body {
+	border-top: 4px solid $sketchup-ltgray!important;
+	background-color: $white !important;
+}
+
+.panel-heading {
+	background-color: $white !important;
+	border: none;
+	padding: 0;
+}
+
+.panel-group .panel+.panel {
+	margin-top: 15px;
+}
+
+.panel-heading .title-text {
+	line-height: 40px;
+	color: $sketchup-gray;
+}
+
+.panel-title a:hover {
+	text-decoration: none;
+}
+	.panel-title .icon-container {
+	display: inline-block;
+	margin-right: 10px;
+	vertical-align: middle;
+	text-align: !important;
+	font-size: 16px;
+	height: 40px;
+	line-height: 40px;
+	padding-top: 1px;
+	padding-right: 10px;
+	padding-left: 10px;
+	border-top-left-radius: 0px;
+	float: left;
+}
+/* COLORED BACKGROUND AND TEXT*/
+.color-bg {
+	background: $sketchup-red;
+}
+}
+
+
+.subhead-text {
+	font-size: ($base-font-size * 2.0);
+}
+.subhead-text-2x {
+	letter-spacing: 0.02em;
+	font-weight: $regular;
+	line-height: ($base-line-height * 1.5);
+}
+.subhead-text-1x {
+	letter-spacing: 0.02em;
+	font-weight: $regular;
+}
+
+
+.img-left {
+		margin-right: 15px;
+		}
+	.content-right-img {
+			&-xs {
+			padding-left: 70px;
+			}
+			&-sm {
+			padding-left: 140px;
+			}
+			&-md {
+			padding-left: 185px;
+			}
+			&-lg {
+			padding-left: 205px;
+			}
+		}
+
+.content { 
+	border: 1px solid; 
+	border-color: #e5e5e5 #dbdbdb #d2d2d2; 
+	-webkit-box-shadow: rgba(0,0,0,0.3) 0 1px 3px; 
+	-moz-box-shadow: rgba(0,0,0,0.3) 0 1px 3px; 
+	box-shadow: rgba(0,0,0,0.3) 0 1px 3px; 
+}
+
+// Help Center //
+
+.icon-large {
+	font-size: ceil(($font-size-large * 1.5));
+}
+
+.ftr-social {
+    position: relative;
+    ul {
+    width: 100%;
+    }
+    ul, .ftr-links ul, .ftr-bottom ul {
+    text-align: center;
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    }
+    ul li, .ftr-links ul li, .ftr-bottom ul li {
+    text-align: center;
+    display: inline-block;
+    }
+    ul li {
+    margin-left: 40px;
+    }
+    ul li:first-child {
+    margin-left: 0;
+    }
+    ul li.blog, ul li.community {
+    margin-left: 31px;
+    top: -3px;
+    position: relative;
+    }
+    ul li a {
+    color: $sketchup-ltgray;
+    text-decoration: none;
+    font-size: 3.6rem;
+    }
+    ul li a .fallback-text {
+    display: none;
+    font-size: 1.25rem;
+    }
+    ul li a:hover {
+    color: $sketchup-red;
+    }
+    ul li.blog a, ul li.community a {
+	text-transform: uppercase;
+	position: relative;
+	font-size: 19px;
+	}
+
+}
+
+// Side Bar Treatment using scrollspy //
+
+
+.su-sidenav {
+	margin-top: 40px;
+    margin-bottom: 20px;
+    min-width: 360px;
+    font-size: 1.4rem;
+ }
+.su-sidebar {
+	h2, .h2 {
+	font-size: 2.4rem;
+	font-weight: 800;
+	background-color: $sketchup-gray;
+	color: $white;
+	padding: $padding-sm;
+	text-align: center;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	}
+
+
+    .affix {
+    	position: fixed;
+		top: 78px;			
+		
+    }
+    .affix-bottom {
+    	position: absolute;
+    	
+    	
+    }
+    .affix-top {
+    	position: absolute;
+    	
+    	
+    }
+	.nav { 
+
+		>.active, :hover, :focus {
+			>a {
+			    padding-left: 20px;
+			    color: $sketchup-gray;
+			    background-color: $sketchup-ltgray;
+			   
+			}
+			>ul {
+				display: block;
+
+			}
+		}
+		>:hover {
+            >a {
+            	background-color: $sketchup-ltgray;
+
+            }
+        }
+		>li {
+			>a {
+				display: block;
+				padding: 20px 20px;
+				font-size: 1.4rem;
+	            font-weight: 800;
+				color: $sketchup-gray;
+				background-color: $light-gray;
+			}
+		}
+		    
+		.nav {
+			>.active, :hover, :focus {
+			>a {
+			    padding-left: 30px;
+			    color: $sketchup-red;
+			    background-color: $light-gray;
+			    
+			}
+			>ul {
+				display: block;
+
+			}
+		}
+			display: none;
+            >li {
+			>a {
+				padding: 5px 30px;
+				font-size: 1.4rem;
+	            font-weight: 300;
+				
+			}
+		}
+		}
+	}
+	.back-to-top {
+	display: block;
+	padding: 4px 10px;
+	font-weight: 300 !important;
+	text-align: center;
+	background-color: transparent;
+	color: $sketchup-red !important;
+	 
+}
+}
+
+#sketchup-make {
+	.row {
+		padding: 90px 0px;
+	}
+	.think-you-might-need {
+			padding-top: 5px;
+		}
+	p { 
+		
+		&.important-txt {
+			font-size:30px;
+			font-weight: 300;
+			padding-bottom: 30px;
+		}
+	}	
+}
+
+// End //
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

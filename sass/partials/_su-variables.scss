@@ -1,0 +1,65 @@
+// SU Colors
+ $dark-gray:        #818181;
+ $error-yellow:     #fff6bf;
+ $light-gray:       #f5f3f2;
+ $silver:           #babcbf;
+
+ $sketchup-medgray: #d4d5d1;
+ $sketchup-ltgray:  lighten($sketchup-medgray, 10%);
+ 
+ $trimble-red:      #a51d25;
+ $trimble-blue:     #005596;
+ $trimble-yellow:   #fca911;
+ $trimble-green:    #4d6f33;
+ $trimble-gray:     #363545;
+ $sketchup-gray:    $trimble-gray;
+ $sketchup-red:     $trimble-blue;
+ $white:            #ffffff;
+ $black:			#000;
+
+// Font weights
+$regular: 300;
+$semi-bold: 400;
+$bold: 600;
+$xtr-bold: 800;
+
+ // SU-Font sizes
+$base-font-size:   10px; // The font size set on the root html element.
+$base-line-height: 1.428571429 ; // This line-height determines the basic unit of vertical rhythm.
+$base-font-weight: $regular;
+
+$h1-font-size: 3.6rem;
+$h2-font-size: 3.0rem;
+$h3-font-size: 2.4rem;
+$h4-font-size: 1.8rem;
+$h5-font-size: 1.4rem;
+$h6-font-size: 1.2rem;
+
+// SU-Fonts 
+$open-sans:       'Open Sans', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+// Lato will be replacing Open Sans as our default in the future.  
+$lato:			  'Lato', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+$courier:         "Courier New", "DejaVu Sans Mono", monospace, sans-serif;
+
+$base-font-family: $open-sans; // The font family set on the html element.
+$font-body:        $open-sans;
+$font-monospace:   $courier;
+$font-monospace-font-size: 85%;
+$font-monospace-line-height: $base-line-height;
+
+// Setup for the Outline versions of the button to get them to be the same visual size as the other buttons. 
+$btn-border:               0px 0px 0px 4px inset !important; 
+$btn-bg-none:		       transparent !default;
+// for image background with polylines
+$bkg-poly-jpg: 	   url(../images/texture_poly-blend.jpg);
+$bkg-poly-svg: 	   url(../images/bkg/bkg-lowpoly-fill.svg), url(../images/bkg/bkg-lowpoly-lines.svg);
+
+$gradient-smoke:        linear-gradient( $sketchup-gray, $white);
+$gradient-blue:        linear-gradient( $trimble-blue, $sketchup-gray);
+
+$base-padding-size: 15px;
+$padding-xs: $base-padding-size;
+$padding-sm: ceil(($base-padding-size * 2)) !default;
+$padding-md: ceil(($base-padding-size * 6)) !default;
+$padding-lg: ceil(($base-padding-size * 12)) !default;
+$padding-xl: ceil(($base-padding-size * 20)) !default;

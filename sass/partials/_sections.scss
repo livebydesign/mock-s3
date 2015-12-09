@@ -1,0 +1,13 @@
+// TYPICAL PADDING ON EACH SECTION //
+    section {
+		padding: ($jumbotron-padding * 2) 0 ($jumbotron-padding * 2);
+		border-bottom: 1px solid $sketchup-gray;
+		
+		h1 {
+			padding-bottom: 10px;
+		}
+		.btn {
+		min-width:250px;
+		}
+
+	}	

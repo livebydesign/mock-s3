@@ -1,0 +1,76 @@
+
+// Base styles
+// --------------------------------------------------
+
+.btn { 
+  border: 0px solid transparent;
+  @include button-size($padding-base-vertical, $padding-base-horizontal, $font-size-large, $line-height-base, $border-radius-base);
+  @include user-select(none);
+
+  &,
+  &:active,
+  &.active {
+    &:focus,
+    &.focus {
+      @include tab-focus;
+    }
+  }
+
+  &:hover,
+  &:focus,
+  &.focus {
+    color: $btn-default-color;
+    text-decoration: none;
+  }
+
+  &:active,
+  &.active {
+    outline: 0;
+    background-image: none;
+    @include box-shadow(inset 0 3px 5px rgba(0,0,0,.125));
+  }
+
+  &.disabled,
+  &[disabled],
+  fieldset[disabled] & {
+    cursor: not-allowed;
+    pointer-events: none; // Future-proof disabling of clicks
+    @include opacity(.65);
+    @include box-shadow(none);
+  }
+}
+
+// Buttons with an Outline
+
+.btn-default-border {
+  @include button-outline-variant($btn-default-bg, $btn-bg-none, $btn-border);
+}
+.btn-primary-border {
+  @include button-outline-variant($btn-primary-bg, $btn-bg-none, $btn-border);
+}
+// Success appears as green
+.btn-success-border {
+  @include button-outline-variant($btn-success-bg, $btn-bg-none, $btn-border);
+}
+// Info appears as blue-green
+.btn-info-border {
+  @include button-outline-variant($btn-info-bg, $btn-bg-none, $btn-border);
+}
+// Warning appears as orange
+.btn-warning-border {
+  @include button-outline-variant($btn-warning-bg, $btn-bg-none, $btn-border);
+}
+// Danger and error appear as red
+.btn-danger-border {
+  @include button-outline-variant($btn-danger-bg, $btn-bg-none, $btn-border);
+}
+
+// Regular Btn Changes
+.btn {
+  border-radius: 2px;
+
+}
+button {
+  > a, a:hover, a:focus, a:visited  {
+  }
+}

@@ -1,0 +1,22 @@
+.drawer-controls {
+	position: -60px;
+    padding-top: 10px;
+	a {
+	color: $trimble-blue;
+	max-height: 20px;
+    }
+}
+.navbar-toggle {
+    float: left;
+    margin-left: 15px;
+}
+.drawer-nav {
+	li {
+		border-top: 1px solid $trimble-blue;
+		a:hover {
+		background-color: $gray-lighter;
+		color: $gray;
+	}
+	}
+	
+}

@@ -1,0 +1,292 @@
+// Background Colors //
+.bkg-none {
+	background-image:none !important;
+	background-color: rgba( $white, .0 ) !important;
+	border-bottom: none;
+}
+.bkg-poly {
+	z-index: -1;
+	background-image: $bkg-poly-svg;
+	background-color: $silver;
+	background-size: auto;
+	background-blend-mode: screen;
+	background-repeat: repeat;
+    background-attachment: fixed;
+    background-position: top;
+    
+}
+.bkg-poly-gray {
+	z-index: -1;
+	background-image: $bkg-poly-svg;
+	background-color: $sketchup-gray;
+	background-size: auto;
+	background-blend-mode: multiply;
+	background-repeat: repeat;
+    background-attachment: fixed;
+    background-position: top;
+}
+.bkg-poly-smoke {
+	z-index: -1;
+	background-image: ($bkg-poly-svg),$gradient-smoke;
+	background-size: auto;
+	background-blend-mode: multiply;
+	background-repeat: repeat;
+    background-attachment: fixed;
+    background-position: top;
+}
+.bkg-poly-blue {
+	z-index: -1;
+	background-image: ($bkg-poly-svg), $gradient-blue;
+	background-size: auto;
+	background-blend-mode: multiply;
+	background-repeat: repeat;
+    background-attachment: fixed;
+    background-position: top;
+}
+.bkg-gray-lighter {
+	background-color: $gray-lighter;
+}
+.bkg-ltgray {
+	background-color: $sketchup-ltgray;
+}
+.bkg-medgray {
+	background-color: $sketchup-medgray;
+}
+.bkg-gray {
+	background-color: $trimble-gray;
+}
+.bkg-red {
+	background-color: $sketchup-red;
+}
+.bkg-white {
+	background-color: $white;
+}
+.white-text {
+		color: $white !important;
+}
+.red-text {
+		color: $sketchup-red !important;
+}
+.blue-text {
+		color: $trimble-blue !important;
+}
+.gray-text {
+		color: $sketchup-gray !important;
+}
+
+h1, h2, h3, h4, h5, h6, p, span,{
+	&.red-text {
+		color: $sketchup-red !important;
+	}
+	&.gray-text {
+		color: $sketchup-gray !important;
+	}
+	&.light-gray-text {
+		color: $sketchup-ltgray !important;
+	}
+	&.white-text {
+		color: $white !important;
+	}
+}
+
+.box-white {
+	border: 1px solid $white;
+	padding: 10px;
+	background-color: rgba($trimble-gray, .5);
+}
+.img-center {
+    margin: 0 auto;
+}
+.img-underline {
+	border-bottom:1px solid $sketchup-gray;
+}
+.border-right {
+	border-right:1px solid $sketchup-medgray;
+}
+.img-underline-gray {
+	border-bottom:1px solid $sketchup-medgray;
+}
+.img-underline-red {
+	border-bottom:1px solid $sketchup-red;
+}
+.img-sticky-btm {
+	margin-bottom: 0px;
+}
+.icon-lg {
+	font-size: ceil($font-size-large * 3);
+}
+	
+
+//General Box Wrap
+
+.su-box {
+	/* this is the container of various design elements */
+	padding: 16% 9%;
+	&.border {
+		border:1px solid $sketchup-medgray;
+	}
+}
+/* Used for spacing examples on Brand Identity Guidelines */
+.su-box-1x {
+	width: 25%;
+	padding-bottom: 25%;
+	background-color: none;
+	color: #87ceeb;
+	position: relative;
+	border:2px dashed #87ceeb;
+	float: left;
+	&:hover {
+		background-color: lighten(#87ceeb, 20%);
+	}
+	&-inside {
+		position: absolute;
+		margin: 0;
+		top: 50%;
+		left: 50%;
+		margin-right: -50%;
+		line-height: normal;
+		margin-left: -5px;
+		margin-top: -10px;
+		p:after {
+			content: "X";
+			font-size: $font-size-large;
+		}
+	}
+}
+
+.su-box-2x {
+	@extend .su-box-1x;
+	width: 50%;
+	padding-bottom: 50%;
+	&-inside {
+		@extend .su-box-1x-inside;
+		margin-left: -20px;
+		margin-top: -20px;
+		p:after {
+			content: "2X";
+			font-size: ($font-size-large *2);
+		}
+	}
+
+}
+.num_circle { 
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    padding: 4px 10px;
+    background: $sketchup-red;
+    color: #fff;
+	font-family: 'Open Sans';
+	font-weight:800;
+	font-size:21px;
+	float:left;
+}
+.text-overlay {
+    position: relative;
+    padding-top: 0px;
+    top:0px;
+    height:inherit;
+    z-index: 10;
+    background-color: rgba(0,0,0,0.5); /*dim the background*/
+  }
+
+
+.pad-x-xl {
+	padding-top: $padding-xl;
+	padding-bottom: $padding-xl;
+}
+.pad-x-lg {
+	padding-top: $padding-lg;
+	padding-bottom: $padding-lg;
+}
+.pad-x-md {
+	padding-top: $padding-md;
+	padding-bottom: $padding-md;
+}
+.pad-x-sm {
+	padding-top: $padding-sm;
+	padding-bottom: $padding-sm;
+}
+.pad-x-xs {
+	padding-top: $padding-xs;
+	padding-bottom: $padding-xs;
+}
+.pad-y-xl {
+	padding-left: $padding-xl;
+	padding-right: $padding-xl;
+}
+.pad-y-lg {
+	padding-left: $padding-lg;
+	padding-right: $padding-lg;
+}
+.pad-y-md {
+	padding-left: $padding-md;
+	padding-right: $padding-md;
+}
+.pad-y-sm {
+	padding-left: $padding-sm;
+	padding-right: $padding-sm;
+}
+.pad-y-xs {
+	padding-left: $padding-xs;
+	padding-right: $padding-xs;
+}
+.pad-x-xs-top {
+	padding-top: $padding-xs;
+}
+.pad-x-xs-btm {
+	padding-bottom: $padding-xs;
+}
+.pad-x-sm-top {
+	padding-top: $padding-sm;
+}
+.pad-x-sm-btm {
+	padding-bottom: $padding-sm;
+}
+.pad-x-md-top {
+	padding-top: $padding-md;
+}
+.pad-x-md-btm {
+	padding-bottom: $padding-md;
+}
+.pad-x-lg-top {
+	padding-top: $padding-lg;
+}
+.pad-x-lg-btm {
+	padding-bottom: $padding-lg;
+}
+.pad-x-xl-top {
+	padding-top: $padding-xl;
+}
+.pad-x-xl-btm {
+	padding-bottom: $padding-xl;
+}
+.pad-y-left-none {
+	padding-left: 0;
+}
+.pad-y-right-none {
+	padding-right: 0;
+}
+
+// COLORED LINES // 
+.colored-line-left,
+.colored-line-right,
+.colored-line, {
+	height: 4px;
+	width: 80px;
+	display: block;
+	background: $sketchup-red;
+}
+
+
+.full-circle {
+ border: 3px solid $sketchup-red;
+ display: block;
+ padding-left: 50%;
+ padding-top: 50%;
+ -moz-border-radius:5em;
+ -webkit-border-radius: 5em;
+}
+
+
+
